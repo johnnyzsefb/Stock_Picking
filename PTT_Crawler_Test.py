@@ -7,7 +7,7 @@ soup = BeautifulSoup(response.text, 'lxml')
 #print response.text
 articles = soup.find_all('div', 'r-ent')
 #print articles
-
+# not sure if this will afect?
 for article in articles:
     try:
         meta = article.find('div', 'title').find('a')
